@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release1|Win32">
+      <Configuration>Release1</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release1|x64">
+      <Configuration>Release1</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46E0C41D-AC00-4A3F-A949-D16BFEA847E4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FXTFFeedServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release1|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release1|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release1|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Soft\boost_1_60_0;C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC++\include;C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\FIXHandle\quickfix\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;Mswsock.lib;Advapi32.lib;quickfix.lib;libmysql.lib;mysqlcppconn.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC\lib;C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC++\lib\opt;C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\FIXHandle\quickfix\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\FIXHandle\quickfix\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;Mswsock.lib;Advapi32.lib;quickfix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\FIXHandle\quickfix\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\FIXHandle\quickfix\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;Mswsock.lib;Advapi32.lib;quickfix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\FIXHandle\quickfix\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release1|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\FIXHandle\quickfix\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;Mswsock.lib;Advapi32.lib;quickfix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\GIT_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\FIXHandle\quickfix\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientHandle\ClientController.h" />
+    <ClInclude Include="ClientHandle\ClientHostInfo.h" />
+    <ClInclude Include="ClientHandle\ClientSocket.h" />
+    <ClInclude Include="ClientHandle\ClientThread.h" />
+    <ClInclude Include="ClientHandle\ClientThreadArgument.h" />
+    <ClInclude Include="ClientHandle\ClientThreadEvent.h" />
+    <ClInclude Include="Common\Constant.h" />
+    <ClInclude Include="Common\FXTFLog.h" />
+    <ClInclude Include="Common\SocketLog.h" />
+    <ClInclude Include="Common\ThreadException.h" />
+    <ClInclude Include="DBHandle\DBOperationController.h" />
+    <ClInclude Include="DBHandle\ConfigFileRead.h" />
+    <ClInclude Include="DBHandle\DBQueryString.h" />
+    <ClInclude Include="DBHandle\FeedProviderDBOperation.h" />
+    <ClInclude Include="DBHandle\ini.h" />
+    <ClInclude Include="DBHandle\MySQLDBOperation.h" />
+    <ClInclude Include="DBHandle\SymbolDBOperation.h" />
+    <ClInclude Include="FilterProcess\FilterProcessController.h" />
+    <ClInclude Include="FilterProcess\SendingThreadHandler.h" />
+    <ClInclude Include="FIXHandle\FixHandleController.h" />
+    <ClInclude Include="FIXHandle\FXCMApplicationMessaging.h" />
+    <ClInclude Include="FIXHandle\FXCMFixController.h" />
+    <ClInclude Include="FIXHandle\FXCMUSApplicationMessaging.h" />
+    <ClInclude Include="FIXHandle\FXCMUSFixController.h" />
+    <ClInclude Include="FIXHandle\OCBCApplicationMessaging.h" />
+    <ClInclude Include="FIXHandle\OCBCFixController.h" />
+    <ClInclude Include="MainThreadArgument.h" />
+    <ClInclude Include="MainThreadHandle.h" />
+    <ClInclude Include="Models\ClientRequestModel.h" />
+    <ClInclude Include="Models\FeedProviderModel.h" />
+    <ClInclude Include="Models\FeedSourceStatusModel.h" />
+    <ClInclude Include="Models\SettingsVariableModel.h" />
+    <ClInclude Include="Models\SymbolModel.h" />
+    <ClInclude Include="Models\SymbolOutModel.h" />
+    <ClInclude Include="Models\SymbolSourceMappingModel.h" />
+    <ClInclude Include="Models\SymbolSourceModel.h" />
+    <ClInclude Include="Models\SymbolSpikeMappingModel.h" />
+    <ClInclude Include="Models\SymbolStatusModel.h" />
+    <ClInclude Include="MT4Handle\MT4Controller.h" />
+    <ClInclude Include="MT4Handle\MT4HostInfo.h" />
+    <ClInclude Include="MT4Handle\MT4Socket.h" />
+    <ClInclude Include="MT4Handle\MT4Thread.h" />
+    <ClInclude Include="MT4Handle\MT4ThreadArgument.h" />
+    <ClInclude Include="MT4Handle\MT4ThreadEvent.h" />
+    <ClInclude Include="Settings\SettingsController.h" />
+    <ClInclude Include="Settings\SymbolValues.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientHandle\ClientController.cpp" />
+    <ClCompile Include="ClientHandle\ClientHostInfo.cpp" />
+    <ClCompile Include="ClientHandle\ClientSocket.cpp" />
+    <ClCompile Include="ClientHandle\ClientThread.cpp" />
+    <ClCompile Include="ClientHandle\ClientThreadArgument.cpp" />
+    <ClCompile Include="ClientHandle\ClientThreadEvent.cpp" />
+    <ClCompile Include="Common\FXTFLog.cpp" />
+    <ClCompile Include="Common\SocketLog.cpp" />
+    <ClCompile Include="Common\ThreadException.cpp" />
+    <ClCompile Include="DBHandle\DBOperationController.cpp" />
+    <ClCompile Include="DBHandle\ConfigFileRead.cpp" />
+    <ClCompile Include="DBHandle\FeedProviderDBOperation.cpp" />
+    <ClCompile Include="DBHandle\ini.c" />
+    <ClCompile Include="DBHandle\MySQLDBOperation.cpp" />
+    <ClCompile Include="DBHandle\SymbolDBOperation.cpp" />
+    <ClCompile Include="FilterProcess\FilterProcessController.cpp" />
+    <ClCompile Include="FilterProcess\SendingThreadHandler.cpp" />
+    <ClCompile Include="FIXHandle\FixHandleController.cpp" />
+    <ClCompile Include="FIXHandle\FXCMApplicationMessaging.cpp" />
+    <ClCompile Include="FIXHandle\FXCMFixController.cpp" />
+    <ClCompile Include="FIXHandle\FXCMUSApplicationMessaging.cpp" />
+    <ClCompile Include="FIXHandle\FXCMUSFixController.cpp" />
+    <ClCompile Include="FIXHandle\OCBCApplicationMessaging.cpp" />
+    <ClCompile Include="FIXHandle\OCBCFixController.cpp" />
+    <ClCompile Include="FXTFFeedServer.cpp" />
+    <ClCompile Include="MainThreadArgument.cpp" />
+    <ClCompile Include="MainThreadHandle.cpp" />
+    <ClCompile Include="Models\ClientRequestModel.cpp" />
+    <ClCompile Include="Models\FeedProviderModel.cpp" />
+    <ClCompile Include="Models\FeedSourceStatusModel.cpp" />
+    <ClCompile Include="Models\SettingsVariableModel.cpp" />
+    <ClCompile Include="Models\SymbolModel.cpp" />
+    <ClCompile Include="Models\SymbolOutModel.cpp" />
+    <ClCompile Include="Models\SymbolSourceMappingModel.cpp" />
+    <ClCompile Include="Models\SymbolSourceModel.cpp" />
+    <ClCompile Include="Models\SymbolSpikeMappingModel.cpp" />
+    <ClCompile Include="Models\SymbolStatusModel.cpp" />
+    <ClCompile Include="MT4Handle\MT4Controller.cpp" />
+    <ClCompile Include="MT4Handle\MT4HostInfo.cpp" />
+    <ClCompile Include="MT4Handle\MT4Socket.cpp" />
+    <ClCompile Include="MT4Handle\MT4Thread.cpp" />
+    <ClCompile Include="MT4Handle\MT4ThreadArgument.cpp" />
+    <ClCompile Include="MT4Handle\MT4ThreadEvent.cpp" />
+    <ClCompile Include="Settings\SettingsController.cpp" />
+    <ClCompile Include="Settings\SymbolValues.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release1|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

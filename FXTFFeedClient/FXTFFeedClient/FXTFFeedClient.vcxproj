@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release1|Win32">
+      <Configuration>Release1</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{37826110-4F91-44A9-A8CD-3A4B1233A181}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FXTFFeedClient</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC++\include;C:\Soft\boost_1_60_0;C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC\lib;C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC++\lib\opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;mysqlcppconn.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC++\include;C:\Soft\boost_1_60_0;C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC\lib;C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC++\lib\opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;mysqlcppconn.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Xdcmake>
+      <SuppressStartupBanner>Yes</SuppressStartupBanner>
+    </Xdcmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC++\include;C:\Soft\boost_1_60_0;C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC++\lib\opt;C:\Git_FeedServer\FXTFFeedServer\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLConnectorC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Common\Constant.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Common\FXTFLog.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Common\SocketLog.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Common\ThreadException.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\DBHandle\ConfigFileRead.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\DBHandle\ini.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLDBOperation.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolModel.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolOutModel.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolSourceMappingModel.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolSpikeMappingModel.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolStatusModel.h" />
+    <ClInclude Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\UsersModel.h" />
+    <ClInclude Include="FeedClientCommon\FeedClientConstant.h" />
+    <ClInclude Include="FeedClientCommon\SingletonFeedClient.h" />
+    <ClInclude Include="FeedClientDBHandle\DBOperationController.h" />
+    <ClInclude Include="FeedClientDBHandle\FeedClientDBOperation.h" />
+    <ClInclude Include="FeedClientSocketController.h" />
+    <ClInclude Include="FeedClientSocketHandle\FeedClientException.h" />
+    <ClInclude Include="FeedClientSocketHandle\FeedClientHostInfo.h" />
+    <ClInclude Include="FeedClientSocketHandle\FeedClientSocket.h" />
+    <ClInclude Include="FeedClientSocketHandle\myLog.h" />
+    <ClInclude Include="FeedClientSocketThread.h" />
+    <ClInclude Include="FeedMonitorInfo.h" />
+    <ClInclude Include="FeedMonitorInfoView.h" />
+    <ClInclude Include="FeedSwitcher.h" />
+    <ClInclude Include="FXTFFeedClient.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SymbolSpikeMappingView.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\Common\FXTFLog.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\Common\SocketLog.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\Common\ThreadException.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\DBHandle\ConfigFileRead.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\DBHandle\ini.c" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\DBHandle\MySQLDBOperation.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolModel.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolOutModel.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolSourceMappingModel.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolSpikeMappingModel.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\SymbolStatusModel.cpp" />
+    <ClCompile Include="..\..\FXTFFeedServer\FXTFFeedServer\Models\UsersModel.cpp" />
+    <ClCompile Include="FeedClientCommon\SingletonFeedClient.cpp" />
+    <ClCompile Include="FeedClientDBHandle\DBOperationController.cpp" />
+    <ClCompile Include="FeedClientDBHandle\FeedClientDBOperation.cpp" />
+    <ClCompile Include="FeedClientSocketController.cpp" />
+    <ClCompile Include="FeedClientSocketHandle\FeedClientException.cpp" />
+    <ClCompile Include="FeedClientSocketHandle\FeedClientHostInfo.cpp" />
+    <ClCompile Include="FeedClientSocketHandle\FeedClientSocket.cpp" />
+    <ClCompile Include="FeedClientSocketHandle\myLog.cpp" />
+    <ClCompile Include="FeedClientSocketThread.cpp" />
+    <ClCompile Include="FeedMonitorInfo.cpp" />
+    <ClCompile Include="FeedMonitorInfoView.cpp" />
+    <ClCompile Include="FeedSwitcher.cpp" />
+    <ClCompile Include="FXTFFeedClient.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release1|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SymbolSpikeMappingView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FXTFFeedClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="FXTFFeedClient.ico" />
+    <Image Include="logo.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
