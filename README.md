@@ -3,7 +3,9 @@
 ------------------------------------------------------------------------
 
 **Input:** Get feed/quotes from Bank or Third party company
+
 **Process:** Connect with feed provider by FIX protocol. Send the data to Feed Quotes Engine, which we are developed here. Process the data then send these quotes to MT4 Trading platform
+
 **Output:**  Quotes will be visible to MT4 terminal and customer then can trade based on this data 
 
 ![Alt text](/Documents/higlevel-overall-dig.png "High Level Overview")
